@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(180, 100%, 97%);
+  padding: 16px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 320px;
+  height: 100px;
+  background-color:hsl(71, 38%, 82%);
+}
+
+.card-horizontal img {
+  
+  height: 80%;
+  object-fit: cover;
+}
+
+.card-horizontal:hover{
+  background-color:hsl(71, 38%, 92%);
+}
+
+.card-text {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.card-text h2 {
+  font-size: 1rem;
+  color: black;
+}
+
+.card-text p {
+  font-size: 0.85rem;
+  color: #666;
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background:  #F0FFFF;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #95358a;
+}
+
+form p{
+    font-weight: bold;
+}
+
+/*Estilo dos campos do formulário*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+  /* Botão Salvar */
+  .salvar {
+    background-color: #4CAF50; 
+  }
+  
+  .salvar:hover {
+    background-color: #45a049; 
+  }
+  
+  /* Botão Cancelar */
+  .cancelar {
+    background-color: #f44336; 
+  }
+  
+  .cancelar:hover {
+    background-color: #e53935; 
+  }
+
+input{
+    flex: 1; 
+    margin-top: 10px;
+    height: 5px;
+    border: solid 1px lightgray;
+    border-radius: 3px;          
+    padding: 8px;
+    
+}
+
+label{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+/*Fim do estilo dos campos do formulário*/
+
+.divisores {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Label | Input */
+    gap: 10px; /* Espaço entre linhas e colunas */
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*estilo da div dados pessoais*/
+#dadosPessoais label {
+    text-align: right; /* Alinha labels à direita */
+}
+
+#dadosPessoais input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#nome{
+    width: 500px;
+}
+/*Fim estilo da div dados pessoais*/
+
+/*estilo do cadastro do prontuário*/
+
+#campo-a{
+    width: 400px;
+}
+
+/*Formulários evolução, prontuario e plano terapeutico*/
+.formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 120px;
+    font-size: 1rem;
+    margin-bottom: 20px; 
+}
+
+.formulario select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    margin-bottom: 20px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    background-size: 16px;
+}

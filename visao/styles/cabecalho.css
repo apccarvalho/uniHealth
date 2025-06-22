@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #F0FFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, table, h1, h2{
+    font-family: "Montserrat", sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    background-color: hsl(71, 38%, 82%);
+    text-align: center;
+    padding: 8px;
+}
+
+td{
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(241, 241, 241);
+}
+
+tr:hover{
+    background-color: hsl(214, 42%, 68%);
+}
+
+.titulo {
+  font-size: 20px;
+}
+
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: hsl(214, 42%, 68%);
+  padding-top: 60px; /* Deixa espaço para o conteúdo do topo */
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #658bc0;
+}
+
+/* Menu superior */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 200px; /* começa após a sidebar */
+  width: calc(100% - 200px);
+  height: 60px;
+  background-color: hsl(214, 42%, 68%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* garante que a logo e o botão fiquem nos extremos */
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/*Logotipo*/
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+/* Conteúdo */
+.conteudo {
+  margin-top: 60px;
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.sair-btn {
+  background-color: #fff;
+  color: #658cc0;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sair-btn:hover {
+  background-color: rgb(243, 158, 158);
+}
+
+.tabelas{
+    border-collapse: collapse;
+}
+
+.tabelas th, .tabelas td{
+    border: 1px solid #d7d7d7;
+}
+
+#listaEP td, th{
+  text-align: center;
+}
+
+.simbolo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+
+.simbolo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Exibição dos dados de um cadastro*/
+
+#exibir-dados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  background-color:  #ffffff;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.campo{
+  flex: 1 1 350px;
+  max-width: 400px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/*Campo de buscar cadastros*/
+.busca-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#busca-input {
+  padding: 10px 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#busca-input:focus {
+  border-color: #658cc0;
+  box-shadow: 0 0 5px rgba(44, 123, 229, 0.4);
+  outline: none;
+}
+
+#busca-btn {
+  padding: 10px 20px;
+  background-color: #658cc0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#busca-btn:hover {
+  background-color: #1a5ed8;
+}
+
+/*Exibição das evoluções e planos*/
+.card-exibicao {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 600px;
+}
+
+.card-exibicao h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+
+.card-exibicao p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.exibicao-h2{
+  color: #95358a;
+}
